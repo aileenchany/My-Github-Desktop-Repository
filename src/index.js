@@ -11,7 +11,7 @@ let days = [
   "Saturday"
 ];
 
-let month = now.getMonth();
+let month = now.getMonth() + 1;
 let date = now.getDate();
 
 let hour = now.getHours();

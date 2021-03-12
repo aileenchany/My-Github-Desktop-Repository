@@ -1,11 +1,10 @@
 /*  ---------- Base CSS  ----------  */
 body {
-  background: radial-gradient(
-    circle at 10% 20%,
+  background: linear-gradient(
+    to right,
     rgba(222, 196, 176, 0.46) 0.1%,
     rgba(246, 230, 172, 0.28) 90.1%
   );
-  display: center;
 }
 
 div.container {
@@ -19,16 +18,16 @@ div.container {
   );
   background-repeat: no-repeat;
   font-family: Arial, Helvetica, sans-serif;
-
   border-radius: 55px;
   margin: 60px auto 20px auto;
   padding: 5px;
   max-width: 600px;
+  box-shadow: 2px 2px 5px 1px rgb(185, 172, 172);
 }
 
 .weather-app {
   background: url("../img/marble-texture.png");
-  background-position: middle;
+  background-size: cover;
   padding: 25px;
   border-radius: 50px;
 }
@@ -134,7 +133,7 @@ a {
 }
 a:hover,
 #coder-link:hover {
-  color: #65605e;
+  color: #e6775c;
 }
 .current-temp,
 .current-icon {
@@ -148,6 +147,13 @@ a:hover,
 #coded-by {
   font-size: 10px;
 }
-#coder-link {
+#coder-link,
+#github-link {
   text-decoration: none;
+}
+#github-link {
+  color: #e6775c;
+}
+#github-link:hover {
+  color: #797675;
 }
