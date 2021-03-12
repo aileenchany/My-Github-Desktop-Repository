@@ -1,0 +1,153 @@
+/*  ---------- Base CSS  ----------  */
+body {
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgba(222, 196, 176, 0.46) 0.1%,
+    rgba(246, 230, 172, 0.28) 90.1%
+  );
+  display: center;
+}
+
+div.container {
+  background: linear-gradient(
+    to bottom right,
+    #d8ab50,
+    #fcf6ba,
+    #d39e2c,
+    #fbf5b7,
+    #aa771c
+  );
+  background-repeat: no-repeat;
+  font-family: Arial, Helvetica, sans-serif;
+
+  border-radius: 55px;
+  margin: 60px auto 20px auto;
+  padding: 5px;
+  max-width: 600px;
+}
+
+.weather-app {
+  background: url("../img/marble-texture.png");
+  background-position: middle;
+  padding: 25px;
+  border-radius: 50px;
+}
+
+.form-group,
+div.col {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+#weather-app-title {
+  font-family: "Poiret One", cursive;
+  font-size: 24px;
+  color: #797675;
+}
+/*  ---------- Current Weather CSS  ----------  */
+h1 {
+  font-family: "Poiret One", cursive;
+  font-size: 38px;
+  margin-bottom: 0;
+  background-color: #aa771c;
+  background-image: linear-gradient(
+    135deg,
+    #d8ab50,
+    #fcf6ba,
+    #d39e2c,
+    #fbf5b7,
+    #aa771c
+  );
+  background-size: 100%;
+  -webkit-text-stroke: 0.5px #797675;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+#location-icon,
+#search-icon {
+  fill: url(#my-gold-gradient) red;
+}
+sup {
+  font-size: 16px;
+  vertical-align: middle;
+}
+.current-icon {
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+}
+#current-icon {
+  width: 80px;
+  height: 80px;
+  fill: url(#my-gold-gradient) red;
+}
+#weather-description {
+  text-transform: capitalize;
+}
+hr {
+  border: 0;
+  height: 2px;
+  background: rgb(201, 171, 41);
+  background-image: linear-gradient(
+    to right,
+    rgb(146, 129, 82),
+    rgb(201, 171, 41),
+    rgb(146, 129, 82)
+  );
+}
+
+h2 {
+  font-size: 16px;
+}
+
+/*  ---------- Weekly Forecast CSS  ----------  */
+.col {
+  text-align: center;
+  top: 0;
+  margin-top: 10px;
+}
+
+.day {
+  font-weight: bold;
+  top: 0;
+  margin: 10px auto;
+}
+svg {
+  vertical-align: top;
+}
+#search-button,
+#location-button {
+  background: white;
+  border: 0.25px solid #65605e;
+}
+#city-input {
+  padding: 5px 20px;
+}
+.search-row {
+  margin-left: 0;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+a:hover,
+#coder-link:hover {
+  color: #65605e;
+}
+.current-temp,
+.current-icon {
+  float: left;
+}
+.current-temp {
+  font-size: 40px;
+}
+/*  ---------- Footer CSS  ----------  */
+
+#coded-by {
+  font-size: 10px;
+}
+#coder-link {
+  text-decoration: none;
+}
